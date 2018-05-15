@@ -1,0 +1,21 @@
+# PHP-time-ago-class
+
+## Feature
+ - php class to convert timestamp in human readable form
+ - calculate execution time of php script
+ - you can add multiple languages
+ - normal date and time
+## Description
+This php class can detect the time difference between now and one old second,minute,hour,day, month or years.
+It takes the date of one day and computes the number of seconds between that day and now.
+The class returns one string that spells the difference of time between the dates.
+##Example:
+<?php
+require('DateTimeAgo.php'); //required class file			
+			$req=new DateTimeAgo;
+             $time='1525697422';
+             $lang='english';
+			echo $req->__convert($time,$lang);
+			?> 
+
+
